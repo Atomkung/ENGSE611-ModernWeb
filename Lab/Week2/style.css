@@ -1,0 +1,18 @@
+
+        /* 1. Element Selector */
+        p {
+            color: green;
+        }
+        
+        /* 2. Class Selector */
+        .highlight {
+            background: yellow;
+            padding: 5px;
+        }        
+        
+        /* 3.ID Selector */
+        #header {
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
