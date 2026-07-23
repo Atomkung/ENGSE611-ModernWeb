@@ -1,0 +1,79 @@
+
+/* 1. Element Selector */
+body {
+    background-color: rgb(255, 231, 251);
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    color: rgb(146, 102, 167);
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(180, 41, 245);
+}
+
+h2 {
+    color: rgb(209, 115, 252);
+}
+        
+/* 2. Class Selector */
+.navbar {
+    background: rgb(255, 150, 229);
+    padding: 5px;
+    border-radius: 100px;
+
+    
+}        
+        
+/* 3.ID Selector */
+#header {
+    background: rgb(253, 206, 241);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+}
+
+.highlight {
+    
+    border: 5px solid rgb(255, 135, 239);
+    border-radius: 10px;
+    text-shadow: 5px 5px 5px rgb(255, 135, 239);
+}
+
+a{
+    color: rgb(165, 89, 200);
+}
+
+a:hover {
+    color: rgb(140, 4, 67);
+    cursor: pointer;
+}
+
+input[type="text"]{
+    border-color: pink;
+    border: 2px soild ;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus{
+    border-color:rgb(140, 4, 67);
+    outline: none;
+    background-color: #fff0fa;
+}
+
+input[type="email"]{
+    border-color: pink;
+    border: 2px soild ;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus{
+    border-color:rgb(140, 4, 67);
+    outline: none;
+    background-color: #fff0fa;
+}
