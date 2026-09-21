@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForLoop</title>
+</head>
+<body>
+    <div style="white-space: pre-line; background-color: aliceblue;">
+        <h3>ผลลัพธ์บนหน้าเว็บ:</h3>
+        <div id="output">กำลังรัน...</div>
+        <p><strong>หมายเหตุ:</strong> ผลลัพธ์จะแสดงใน <span style="color: red;">Console จริง<span>ด้วย</p>
+    </div>
+
+    <script>
+        let output = "";
+
+        for (let i = 0, j = 100; i != j; i += 5, j -= 5){
+            output += `i = ${i}, j = ${j}\n`;
+            console.log("i = %d, j = %d", i, j); // แสดงผลใน Console จริง
+        }
+
+        output += "Loop ended";
+        console.log("Loop ended"); // Console จริง
+
+        document.getElementById("output").textContent = output;
+    </script>
+</body>
+</html>
