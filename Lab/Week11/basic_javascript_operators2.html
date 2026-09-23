@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+</head>
+<body>
+    <pre id="outputBox">ผลลัพธ์จะแสดงที่นี่...</pre>
+    <button onclick="runDemo()">Run Code</button>
+    <script>
+    function runDemo(){
+        console.clear();
+        const output = [];
+
+        let a = 10; let b = 3;
+
+        output.push("a + b = " + (a + b));
+        console.log("a + b =", a + b);
+
+        output.push("a % b = " + (a % b));
+        console.log("a + b =", a % b);
+
+        output.push("a ** b = " + (a ** b));
+        console.log("a ** b =", a**b);
+
+        // Math object
+        output.push("ปัดเศษ 3.7: " + Math.round(3.7));
+        console.log("ปัดเศษ 3.7:", Math.round(3.7));
+        output.push("ปัดลง 3.7: " + Math.floor(3.7));
+        console.log("ปัดลง 3.7:", Math.floor(3.7));
+        output.push("ปัดขึ้น 3.2: " + Math.ceil(3.2));
+        console.log("ปัดขึ้น 3.2:", Math.ceil(3.2));
+        let rand = Math.random();
+        output.push("สุ่ม 0-1: " + rand);
+        console.log("สุ่ม 0-1:", rand)
+
+        //ลูกเต๋า
+        let dice = Math.floor(Math.random() * 6) + 1;
+        output.push("ทอยลูกเต๋าได้: " + dice);
+        console.log("ทอยลูกเต๋าได้:", dice);
+
+        //แสดงผลหน้าเว็บ
+        document.getElementById("outputBox").textContent = output.join("\n");
+    }
+    </script>
+</body>
+</html>
